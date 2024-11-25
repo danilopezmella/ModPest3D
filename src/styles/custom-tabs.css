@@ -1,0 +1,175 @@
+
+
+/* Íconos dentro de la pestaña */
+.my-custom-tab .my-custom-tab-icon {
+  font-size: 13px;
+}
+
+.my-custom-tab .my-custom-tab-icon:hover {
+  border-radius: 2px;
+  background-color: var(--dv-icon-hover-background-color);
+}
+
+/* Botón dentro de la pestaña */
+.my-custom-tab .tab-button {
+  margin-left: 8px; /* Espaciado entre el título y el botón */
+  padding: 6px 12px; /* Espaciado interno */
+  border: none; /* Elimina el borde por defecto */
+  border-radius: 6px; /* Bordes redondeados */
+  background: linear-gradient(135deg, #4CAF50, #2E7D32); /* Degradado */
+  color: #ffffff; /* Color del texto */
+  cursor: pointer; /* Cambia el cursor a "pointer" al pasar sobre el botón */
+  font-size: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: all 0.3s ease; /* Transiciones suaves */
+}
+
+.my-custom-tab {
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Espaciado entre "Window" y el grupo de botones */
+}
+
+.button-group {
+    display: flex;
+    gap: 0px; /* Espaciado reducido entre botones */
+    align-items: center;
+}
+
+
+
+
+.button-group {
+  display: flex;
+  gap: 4px; /* Espaciado reducido entre botones */
+  align-items: center;
+}
+
+.icon-button {
+  background: #f3f3f3; /* Fondo claro */
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 8px; /* Bordes redondeados */
+  margin: 0;
+  padding: 6px; /* Espaciado interno */
+  width: 32px; /* Tamaño consistente */
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Transición suave */
+}
+
+.icon-button:hover {
+  background: #e1e1e1; /* Fondo al pasar el mouse */
+  border-color: #bbb; /* Cambia el color del borde */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.icon-button:active {
+  transform: translateY(0); /* Efecto de clic */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+}
+
+.dv-tab {
+  background-color: #f7f7f7;
+  color: #888888;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Específicamente para tabs personalizadas */
+.my-custom-tab:not(.dv-active-tab) {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+}
+
+.my-custom-tab > span {
+  color: #413d36; /* Mantiene el color elegante */
+  padding-top: 2px; /* Ajusta verticalmente el texto */
+  font-size: 14px; /* Aumenta el tamaño de la fuente */
+  font-family: "Nunito", sans-serif; /* Asegura el uso de la fuente Nunito */
+  letter-spacing: -0.5px; /* Opcional: mejora la legibilidad */
+  line-height: 1px; /* Proporciona espacio vertical adecuado */
+  font-weight: 500; /* Hace que el texto sea más visible */
+}
+
+/* Estilos para tabs activas */
+.dv-tab.dv-active-tab {
+  background-color: var(--button-hover-bg); /* Fondo más oscuro */
+  color: var(--button-hover-text); /* Texto destacado */
+  border: 2px solid var(--button-border); /* Borde para resaltar */
+  border-radius: 6px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+  position: relative;
+  padding: 6px 12px; /* Espaciado interno */
+  transition: all 0.3s ease;
+}
+
+/* Decoración con pseudo-elemento */
+/*.dv-tab.dv-active-tab::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 10%;
+  width: 80%;
+  height: 3px;
+  background-color: var(--button-border);
+  border-radius: 2px;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+}
+
+/* Estilos exclusivos para tabs personalizadas */
+.my-custom-tab {
+  background-color: transparent; /* Fondo sin interferencias */
+  border: none;
+  padding: 0;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  background-color: transparent; /* Elimina fondo */
+  border: none; /* Elimina bordes */
+  padding: 0; /* Elimina espacios alrededor */
+  margin: 0; /* Elimina márgenes */
+  box-shadow: none; /* Elimina sombra */
+}
+
+
+button:hover {
+  background: #e1e1e1; /* Fondo claro al pasar el mouse */
+  border-radius: 4px; /* Bordes redondeados en hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+button:active {
+  background: #ccc; /* Fondo más oscuro al hacer clic */
+  transform: scale(0.95); /* Pequeño efecto de escala */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+button img {
+  width: 16px; /* Ajusta el tamaño del ícono */
+  height: 16px; /* Ajusta el tamaño del ícono */
+  pointer-events: none; /* Evita interferencias al hacer clic en el ícono */
+  transform: scale(0.8); /* Pequeño efecto de escala */
+}
+.logo-icon {
+  transition: transform 0.6s ease, filter 0.6s ease; /* Transición suave */
+  transform-origin: center; /* Punto de rotación */
+  display: inline-block; /* Necesario para imágenes */
+  perspective: 1000px; /* Profundidad para efecto 3D */
+}
+
+.logo-icon:hover {
+  transform: scale(1.1) rotateX(10deg); /* Aumenta tamaño y rota ligeramente */
+  filter: brightness(1.2); /* Un poco más brillante para resaltar */
+}
+

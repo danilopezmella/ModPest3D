@@ -1,0 +1,100 @@
+:root {
+    --button-bg: #e4d7f5; /* Fondo lila claro */
+    --button-border: #d2b8ec; /* Borde lila oscuro */
+    --button-text: #3e2c47; /* Texto lila oscuro */
+    --button-hover-bg: #d9c6f0; /* Fondo más oscuro para hover */
+    --button-hover-text: #2a1932; /* Texto aún más oscuro para hover */
+    --header-bg: #f7f2fb; /* Fondo claro del contenedor */
+    --header-border: #e0d0f4; /* Borde del contenedor */
+}
+
+.header {
+    display: flex;
+    gap: 12px; /* Espaciado entre los botones */
+    padding: 10px; /* Espaciado interno del contenedor */
+    background-color: var(--header-bg); /* Fondo del contenedor */
+    border-bottom: 2px solid var(--header-border); /* Borde inferior */
+    align-items: center; /* Centra verticalmente */
+}
+
+.header-buttons {
+    background-color: var(--button-bg); /* Fondo del botón */
+    border: 1px solid var(--button-border); /* Borde del botón */
+    padding: 6px 12px; /* Espaciado interno */
+    border-radius: 6px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de texto */
+    font-weight: 600; /* Texto más grueso */
+    color: var(--button-text); /* Color del texto */
+    height: 36px; /* Altura fija */
+    display: flex;
+    align-items: center; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el texto horizontalmente */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.header-buttons:hover {
+    background-color: var(--button-hover-bg); /* Fondo más oscuro al pasar el cursor */
+    color: var(--button-hover-text); /* Texto más oscuro al pasar el cursor */
+}
+
+.header-buttons:active {
+    background-color: var(--button-border); /* Fondo más oscuro al hacer clic */
+    color: var(--button-hover-text);
+}
+
+
+
+
+.header {
+    display: flex; /* Asegura que los elementos estén en línea */
+    gap: 8px; /* Espaciado horizontal entre botones */
+    padding: 8px; /* Espaciado interno del contenedor */
+    background-color: #f5f5f5; /* Fondo del contenedor */
+    border-bottom: 1px solid #ddd; /* Borde inferior */
+    align-items: center; /* Alineación vertical */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaciado entre branding y el botón */
+    padding: 10px; /* Espaciado interno */
+    background-color: var(--header-bg); /* Fondo lila claro */
+    border-bottom: 2px solid var(--header-border); /* Borde inferior */
+}
+
+.branding {
+    display: flex;
+    align-items: center; /* Centra ícono y texto verticalmente */
+    gap: 8px; /* Espaciado entre ícono y texto */
+}
+.logo-icon {
+    width: 50px;
+    height: auto;
+}
+
+.branding-text {
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: 600; /* Texto más grueso */
+    color: #3e2c47; /* Lila oscuro para el texto */
+    font-family: "Nunito", sans-serif; /* Fuente personalizada */
+}
+
+.header-buttons {
+    background-color: var(--button-bg); /* Fondo del botón */
+    border: 1px solid var(--button-border); /* Borde del botón */
+    padding: 6px 12px; /* Espaciado interno */
+    border-radius: 6px; /* Bordes redondeados */
+    font-size: 14px; /* Tamaño de texto */
+    font-weight: 600; /* Texto más grueso */
+    color: var(--button-text); /* Color del texto */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.header-buttons:hover {
+    background-color: var(--button-hover-bg); /* Fondo más oscuro al pasar el cursor */
+    color: var(--button-hover-text); /* Texto más oscuro al pasar el cursor */
+}
+

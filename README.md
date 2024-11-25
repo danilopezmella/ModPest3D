@@ -1,6 +1,6 @@
-# Tauri + React + Typescript
+# Modpest3D
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+Just the beggining of a jurney to develop a desktop app to visualize and control PEST files and 3D groundwater models made in modflow.
 
 ## Recommended IDE Setup
 
